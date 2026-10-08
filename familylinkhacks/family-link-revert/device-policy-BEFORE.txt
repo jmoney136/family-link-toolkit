@@ -1,0 +1,1039 @@
+Current Device Policy Manager state:
+  Immutable state:
+    mHasFeature=true
+    mIsWatch=false
+    mIsAutomotive=false
+    mHasTelephonyFeature=true
+    mSafetyChecker=null
+  Profile Owner (User 0): 
+    admin=ComponentInfo{com.google.android.gms/com.google.android.gms.kids.account.receiver.ProfileOwnerReceiver}
+    name=Family Link parental controls
+    package=com.google.android.gms
+    isOrganizationOwnedDevice=false
+  
+  Profile Owner (User 150): 
+    admin=ComponentInfo{com.samsung.knox.securefolder/com.samsung.knox.securefolder.containeragent.detector.KnoxDeviceAdminReceiver}
+    name=com.samsung.knox.securefolder
+    package=com.samsung.knox.securefolder
+    isOrganizationOwnedDevice=false
+  
+  Owner Services:
+    User: 0
+      com.google.android.gms/.kids.SupervisionService u0 [bound] [connected]
+        Next backoff(sec): 3600
+        Connected: 1  Disconnected: 0  Died: 0  Duration: +5h7m49s29ms
+  
+  
+  Enabled Device Admins (User 0, provisioningState: 0):
+    com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver:
+      uid=10074
+      testOnlyAdmin=false
+      policies:
+        limit-password
+        watch-login
+        force-lock
+        expire-password
+        encrypted-storage
+        disable-camera
+        disable-keyguard-features
+      passwordQuality=0x0
+      minimumPasswordLength=0
+      passwordHistoryLength=0
+      minimumPasswordUpperCase=0
+      minimumPasswordLowerCase=0
+      minimumPasswordLetters=1
+      minimumPasswordNumeric=1
+      minimumPasswordSymbols=1
+      minimumPasswordNonLetter=0
+      maximumTimeToUnlock=0
+      strongAuthUnlockTimeout=0
+      maximumFailedPasswordsForWipe=0
+      specifiesGlobalProxy=false
+      passwordExpirationTimeout=0
+      passwordExpirationDate=0
+      encryptionRequested=false
+      disableCamera=false
+      disableCallerId=false
+      disableContactsSearch=false
+      disableBluetoothContactSharing=true
+      disableScreenCapture=false
+      requireAutoTime=false
+      forceEphemeralUsers=false
+      isNetworkLoggingEnabled=false
+      disabledKeyguardFeatures=0
+      crossProfileWidgetProviders=null
+      organizationColor=-16746133
+      accountTypesWithManagementDisabled={}
+      userRestrictions:
+        no_add_user
+        no_add_managed_profile
+        no_factory_reset
+        no_config_location
+        no_safe_boot
+        no_remove_user
+        no_config_credentials
+        no_config_date_time
+      defaultEnabledRestrictionsAlreadySet={}
+      isParent=false
+      mCrossProfileCalendarPackages=[]
+      mCrossProfilePackages=[]
+      mSuspendPersonalApps=false
+      mProfileMaximumTimeOffMillis=0
+      mProfileOffDeadline=0
+      mAlwaysOnVpnPackage=null
+      mAlwaysOnVpnLockdown=false
+      mPreferentialNetworkServiceEnabled=false
+      mCommonCriteriaMode=false
+      mPasswordComplexity=0
+      mNearbyNotificationStreamingPolicy=1
+      mNearbyAppStreamingPolicy=1
+      mAdminCanGrantSensorsPermissions=false
+      mUsbDataSignaling=true
+      eas it policies:
+        simplePasswordEnabled=true
+        allowStorageCard=true
+        allowWifi=true
+        allowTextMessaging=true
+        allowPOPIMAPEmail=true
+        allowBrowser=true
+        allowInternetSharing=true
+        allowBluetoothMode=2
+        allowDesktopSync=true
+        allowIrDA=true
+        requireStorageCardEncryption=false
+    com.google.android.gms/.mdm.receivers.MdmDeviceAdminReceiver:
+      uid=10074
+      testOnlyAdmin=false
+      policies:
+        wipe-data
+        reset-password
+        force-lock
+        disable-keyguard-features
+      passwordQuality=0x0
+      minimumPasswordLength=0
+      passwordHistoryLength=0
+      minimumPasswordUpperCase=0
+      minimumPasswordLowerCase=0
+      minimumPasswordLetters=1
+      minimumPasswordNumeric=1
+      minimumPasswordSymbols=1
+      minimumPasswordNonLetter=0
+      maximumTimeToUnlock=0
+      strongAuthUnlockTimeout=0
+      maximumFailedPasswordsForWipe=0
+      specifiesGlobalProxy=false
+      passwordExpirationTimeout=0
+      passwordExpirationDate=0
+      encryptionRequested=false
+      disableCamera=false
+      disableCallerId=false
+      disableContactsSearch=false
+      disableBluetoothContactSharing=true
+      disableScreenCapture=false
+      requireAutoTime=false
+      forceEphemeralUsers=false
+      isNetworkLoggingEnabled=false
+      disabledKeyguardFeatures=0
+      crossProfileWidgetProviders=null
+      organizationColor=-16746133
+      accountTypesWithManagementDisabled={}
+      userRestrictions:
+        null
+      defaultEnabledRestrictionsAlreadySet={}
+      isParent=false
+      mCrossProfileCalendarPackages=[]
+      mCrossProfilePackages=[]
+      mSuspendPersonalApps=false
+      mProfileMaximumTimeOffMillis=0
+      mProfileOffDeadline=0
+      mAlwaysOnVpnPackage=null
+      mAlwaysOnVpnLockdown=false
+      mPreferentialNetworkServiceEnabled=false
+      mCommonCriteriaMode=false
+      mPasswordComplexity=0
+      mNearbyNotificationStreamingPolicy=1
+      mNearbyAppStreamingPolicy=1
+      mAdminCanGrantSensorsPermissions=false
+      mUsbDataSignaling=true
+      eas it policies:
+        simplePasswordEnabled=true
+        allowStorageCard=true
+        allowWifi=true
+        allowTextMessaging=true
+        allowPOPIMAPEmail=true
+        allowBrowser=true
+        allowInternetSharing=true
+        allowBluetoothMode=2
+        allowDesktopSync=true
+        allowIrDA=true
+        requireStorageCardEncryption=false
+    com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver:
+      uid=10136
+      testOnlyAdmin=false
+      policies:
+        limit-password
+        force-lock
+      passwordQuality=0x0
+      minimumPasswordLength=0
+      passwordHistoryLength=0
+      minimumPasswordUpperCase=0
+      minimumPasswordLowerCase=0
+      minimumPasswordLetters=1
+      minimumPasswordNumeric=1
+      minimumPasswordSymbols=1
+      minimumPasswordNonLetter=0
+      maximumTimeToUnlock=0
+      strongAuthUnlockTimeout=0
+      maximumFailedPasswordsForWipe=0
+      specifiesGlobalProxy=false
+      passwordExpirationTimeout=0
+      passwordExpirationDate=0
+      encryptionRequested=false
+      disableCamera=false
+      disableCallerId=false
+      disableContactsSearch=false
+      disableBluetoothContactSharing=true
+      disableScreenCapture=false
+      requireAutoTime=false
+      forceEphemeralUsers=false
+      isNetworkLoggingEnabled=false
+      disabledKeyguardFeatures=0
+      crossProfileWidgetProviders=null
+      organizationColor=-16746133
+      accountTypesWithManagementDisabled={}
+      userRestrictions:
+        null
+      defaultEnabledRestrictionsAlreadySet={}
+      isParent=false
+      mCrossProfileCalendarPackages=[]
+      mCrossProfilePackages=[]
+      mSuspendPersonalApps=false
+      mProfileMaximumTimeOffMillis=0
+      mProfileOffDeadline=0
+      mAlwaysOnVpnPackage=null
+      mAlwaysOnVpnLockdown=false
+      mPreferentialNetworkServiceEnabled=false
+      mCommonCriteriaMode=false
+      mPasswordComplexity=0
+      mNearbyNotificationStreamingPolicy=1
+      mNearbyAppStreamingPolicy=1
+      mAdminCanGrantSensorsPermissions=false
+      mUsbDataSignaling=true
+      eas it policies:
+        simplePasswordEnabled=true
+        allowStorageCard=true
+        allowWifi=true
+        allowTextMessaging=true
+        allowPOPIMAPEmail=true
+        allowBrowser=true
+        allowInternetSharing=true
+        allowBluetoothMode=2
+        allowDesktopSync=true
+        allowIrDA=true
+        requireStorageCardEncryption=false
+    com.samsung.android.kgclient/.receiver.KGAdminReceiver:
+      uid=10075
+      testOnlyAdmin=false
+      policies:
+        wipe-data
+        reset-password
+        limit-password
+        watch-login
+        force-lock
+        expire-password
+        encrypted-storage
+        disable-camera
+      passwordQuality=0x0
+      minimumPasswordLength=0
+      passwordHistoryLength=0
+      minimumPasswordUpperCase=0
+      minimumPasswordLowerCase=0
+      minimumPasswordLetters=1
+      minimumPasswordNumeric=1
+      minimumPasswordSymbols=1
+      minimumPasswordNonLetter=0
+      maximumTimeToUnlock=0
+      strongAuthUnlockTimeout=0
+      maximumFailedPasswordsForWipe=0
+      specifiesGlobalProxy=false
+      passwordExpirationTimeout=0
+      passwordExpirationDate=0
+      encryptionRequested=false
+      disableCamera=false
+      disableCallerId=false
+      disableContactsSearch=false
+      disableBluetoothContactSharing=true
+      disableScreenCapture=false
+      requireAutoTime=false
+      forceEphemeralUsers=false
+      isNetworkLoggingEnabled=false
+      disabledKeyguardFeatures=0
+      crossProfileWidgetProviders=null
+      organizationColor=-16746133
+      accountTypesWithManagementDisabled={}
+      userRestrictions:
+        null
+      defaultEnabledRestrictionsAlreadySet={}
+      isParent=false
+      mCrossProfileCalendarPackages=[]
+      mCrossProfilePackages=[]
+      mSuspendPersonalApps=false
+      mProfileMaximumTimeOffMillis=0
+      mProfileOffDeadline=0
+      mAlwaysOnVpnPackage=null
+      mAlwaysOnVpnLockdown=false
+      mPreferentialNetworkServiceEnabled=false
+      mCommonCriteriaMode=false
+      mPasswordComplexity=0
+      mNearbyNotificationStreamingPolicy=1
+      mNearbyAppStreamingPolicy=1
+      mAdminCanGrantSensorsPermissions=false
+      mUsbDataSignaling=true
+      eas it policies:
+        simplePasswordEnabled=true
+        allowStorageCard=true
+        allowWifi=true
+        allowTextMessaging=true
+        allowPOPIMAPEmail=true
+        allowBrowser=true
+        allowInternetSharing=true
+        allowBluetoothMode=2
+        allowDesktopSync=true
+        allowIrDA=true
+        requireStorageCardEncryption=false
+  
+    mPasswordOwner=-1
+    mUserControlDisabledPackages=[]
+    mAppsSuspended=false
+    mUserSetupComplete=true
+    mAffiliationIds={}
+    mNewUserDisclaimer=null
+  
+    PersonalAppsSuspensionHelper
+      critical packages: 1 app
+        0: com.google.android.apps.wellbeing
+      launcher packages: 2 apps
+        0: com.sec.android.app.launcher
+        1: com.android.settings
+      accessibility services: 2 apps
+        0: com.microsoft.appmanager
+        1: app.lawnchair
+      input method packages: 4 apps
+        0: com.samsung.android.honeyboard
+        1: org.kde.kdeconnect_tp
+        2: com.google.android.tts
+        3: com.google.android.googlequicksearchbox
+      SMS package: com.google.android.apps.messaging
+      Settings package: com.android.settings
+      Packages subject to suspension: 86 apps
+        0: com.google.android.youtube
+        1: com.tailscale.ipn
+        2: com.samsung.android.calendar
+        3: com.jaspar.teenmusicstreamer
+        4: com.samsung.android.themedesigner
+        5: com.transportmeptyltd.transportmepassenger
+        6: com.jdlf.compass
+        7: com.bethsoft.falloutshelter
+        8: com.samsung.android.game.immersivemode
+        9: au.com.solus.BegaValleyShireLibrary
+        10: com.whatsapp
+        11: com.samsung.aimodelprovider.reflectionremovalmodels
+        12: com.gma.water.sort.puzzle
+        13: com.microsoft.xboxone.smartglass
+        14: com.google.android.verifier
+        15: com.samsung.android.soundassistant
+        16: com.sec.android.app.samsungapps
+        17: moe.shizuku.privileged.api
+        18: com.samsung.android.game.gamehome
+        19: com.microsoft.skydrive
+        20: com.draco.ladb
+        21: org.chromium.webapk.ae4369028cb7ecf47_v2
+        22: com.samsung.android.messaging
+        23: com.instagram.android
+        24: com.samsung.android.app.tips
+        25: com.samsung.SMT.lang_en_us_g02
+        26: com.samsung.SMT.lang_en_us_l03
+        27: org.localsend.localsend_app
+        28: com.google.android.gm
+        29: com.google.android.apps.tachyon
+        30: com.sec.android.gallery3d
+        31: com.wakdev.wdnfc
+        32: net.nullsum.freedoom
+        33: jbl.stc.com
+        34: com.ryzerobotics.tello
+        35: com.gorillasoftware.everyproxy
+        36: com.samsung.knox.securefolder
+        37: com.samsung.android.app.contacts
+        38: com.samsung.android.app.reminder
+        39: com.samsung.aimodelprovider.shadowremovalmodels
+        40: com.samsung.android.app.networkstoragemanager
+        41: com.google.android.apps.docs
+        42: com.google.android.apps.maps
+        43: com.samsung.android.gamesightplugin
+        44: com.sec.android.app.clockpackage
+        45: com.samsung.aimodelprovider.objectremovalmodels
+        46: com.jaspar.usbmessage
+        47: com.google.android.contactkeys
+        48: com.bendigobank.mobile
+        49: com.android.chrome
+        50: com.google.android.apps.walletnfcrel
+        51: com.example.siequestgenerator
+        52: com.jaspar.blockblast
+        53: com.samsung.android.aremojieditor
+        54: com.sec.android.app.myfiles
+        55: com.google.android.apps.photos
+        56: com.google.android.calendar
+        57: com.Jaspar.jarvis
+        58: com.meizu.flyme.LiveWallpapers
+        59: com.spotify.music
+        60: com.samsung.android.arzone
+        61: com.sec.android.app.sbrowser
+        62: com.sec.kidsplat.kidsbrowser
+        63: com.samsung.android.bixbyvision.framework
+        64: ai.perplexity.app.android
+        65: com.samsung.android.game.gamelab
+        66: au.gov.bom.metview
+        67: com.sec.android.app.popupcalculator
+        68: com.samsung.android.bixby.ondevice.enus
+        69: com.samsung.android.voc
+        70: com.aspiro.tidal
+        71: com.samsung.android.perf_z
+        72: com.sec.android.app.kidshome
+        73: com.cooingdv.kyfpv
+        74: com.samsung.android.spay
+        75: com.samsung.android.app.notes
+        76: com.sec.android.mimage.avatarstickers
+        77: com.termux
+        78: com.jaspar.devsync
+        79: com.sec.android.easyMover
+        80: com.wakdev.nfctools.pro
+        81: com.yourname.dinnerrandomiser
+        82: com.azure.authenticator
+        83: com.ihd.beatsaber
+        84: com.sec.android.app.camera
+        85: com.samsung.android.game.gameboosterplus
+  
+  
+  Enabled Device Admins (User 150, provisioningState: 0):
+    com.samsung.knox.securefolder/.containeragent.detector.KnoxDeviceAdminReceiver:
+      uid=15010118
+      testOnlyAdmin=false
+      policies:
+        wipe-data
+        reset-password
+        limit-password
+        watch-login
+        force-lock
+        expire-password
+        encrypted-storage
+        disable-camera
+        disable-keyguard-features
+      passwordQuality=0x0
+      minimumPasswordLength=0
+      passwordHistoryLength=0
+      minimumPasswordUpperCase=0
+      minimumPasswordLowerCase=0
+      minimumPasswordLetters=1
+      minimumPasswordNumeric=1
+      minimumPasswordSymbols=1
+      minimumPasswordNonLetter=0
+      maximumTimeToUnlock=0
+      strongAuthUnlockTimeout=0
+      maximumFailedPasswordsForWipe=0
+      specifiesGlobalProxy=false
+      passwordExpirationTimeout=0
+      passwordExpirationDate=0
+      encryptionRequested=false
+      disableCamera=false
+      disableCallerId=false
+      disableContactsSearch=true
+      disableBluetoothContactSharing=true
+      disableScreenCapture=false
+      requireAutoTime=false
+      forceEphemeralUsers=false
+      isNetworkLoggingEnabled=false
+      disabledKeyguardFeatures=0
+      crossProfileWidgetProviders=null
+      organizationColor=-16746133
+      accountTypesWithManagementDisabled={}
+      userRestrictions:
+        no_outgoing_beam
+        no_cross_profile_copy_paste
+        no_debugging_features
+      defaultEnabledRestrictionsAlreadySet={no_bluetooth_sharing}
+      isParent=false
+      parentAdmin:
+        uid=15010118
+        testOnlyAdmin=false
+        policies:
+          wipe-data
+          reset-password
+          limit-password
+          watch-login
+          force-lock
+          expire-password
+          encrypted-storage
+          disable-camera
+          disable-keyguard-features
+        passwordQuality=0x0
+        minimumPasswordLength=0
+        passwordHistoryLength=0
+        minimumPasswordUpperCase=0
+        minimumPasswordLowerCase=0
+        minimumPasswordLetters=1
+        minimumPasswordNumeric=1
+        minimumPasswordSymbols=1
+        minimumPasswordNonLetter=0
+        maximumTimeToUnlock=0
+        strongAuthUnlockTimeout=0
+        maximumFailedPasswordsForWipe=0
+        specifiesGlobalProxy=false
+        passwordExpirationTimeout=0
+        passwordExpirationDate=0
+        encryptionRequested=false
+        disableCamera=false
+        disableCallerId=false
+        disableContactsSearch=false
+        disableBluetoothContactSharing=true
+        disableScreenCapture=false
+        requireAutoTime=false
+        forceEphemeralUsers=false
+        isNetworkLoggingEnabled=false
+        disabledKeyguardFeatures=0
+        crossProfileWidgetProviders=null
+        organizationColor=-16746133
+        accountTypesWithManagementDisabled={}
+        userRestrictions:
+          null
+        defaultEnabledRestrictionsAlreadySet={}
+        isParent=true
+        mCrossProfileCalendarPackages=[]
+        mCrossProfilePackages=[]
+        mSuspendPersonalApps=false
+        mProfileMaximumTimeOffMillis=0
+        mProfileOffDeadline=0
+        mAlwaysOnVpnPackage=null
+        mAlwaysOnVpnLockdown=false
+        mPreferentialNetworkServiceEnabled=false
+        mCommonCriteriaMode=false
+        mPasswordComplexity=0
+        mNearbyNotificationStreamingPolicy=1
+        mNearbyAppStreamingPolicy=1
+        mAdminCanGrantSensorsPermissions=false
+        mUsbDataSignaling=true
+        eas it policies:
+          simplePasswordEnabled=true
+          allowStorageCard=true
+          allowWifi=true
+          allowTextMessaging=true
+          allowPOPIMAPEmail=true
+          allowBrowser=true
+          allowInternetSharing=true
+          allowBluetoothMode=2
+          allowDesktopSync=true
+          allowIrDA=true
+          requireStorageCardEncryption=false
+      mCrossProfileCalendarPackages=[]
+      mCrossProfilePackages=[]
+      mSuspendPersonalApps=false
+      mProfileMaximumTimeOffMillis=0
+      mProfileOffDeadline=0
+      mAlwaysOnVpnPackage=null
+      mAlwaysOnVpnLockdown=false
+      mPreferentialNetworkServiceEnabled=false
+      mCommonCriteriaMode=false
+      mPasswordComplexity=0
+      mNearbyNotificationStreamingPolicy=1
+      mNearbyAppStreamingPolicy=1
+      mAdminCanGrantSensorsPermissions=false
+      mUsbDataSignaling=true
+      eas it policies:
+        simplePasswordEnabled=true
+        allowStorageCard=true
+        allowWifi=true
+        allowTextMessaging=true
+        allowPOPIMAPEmail=true
+        allowBrowser=true
+        allowInternetSharing=true
+        allowBluetoothMode=2
+        allowDesktopSync=true
+        allowIrDA=true
+        requireStorageCardEncryption=false
+  
+    mPasswordOwner=-1
+    mUserControlDisabledPackages=[]
+    mAppsSuspended=false
+    mUserSetupComplete=true
+    mAffiliationIds={}
+    mNewUserDisclaimer=null
+  
+  
+  Constants:
+    DAS_DIED_SERVICE_RECONNECT_BACKOFF_SEC: 3600
+    DAS_DIED_SERVICE_RECONNECT_BACKOFF_INCREASE: 2.0
+    DAS_DIED_SERVICE_RECONNECT_MAX_BACKOFF_SEC: 86400
+    DAS_DIED_SERVICE_STABLE_CONNECTION_THRESHOLD_SEC: 120
+  
+  Stats:
+    LockGuard.guard(): count=970677, total=3888.3ms, avg=0.004ms, max calls/s=8330 max dur/s=48.9ms max time=21.3ms
+  
+  Encryption Status: per-user
+  
+  no pending user created callback tokens
+  
+  Device policy cache:
+    Screen capture disabled: {0=false, 150=false}
+    Password quality: {0=0, 150=0}
+    Permission policy: {0=0, 150=0}
+    Admin can grant sensors permission: {0=false, 150=false}
+  
+  Device state cache:
+    Device provisioned: true
+  
+  OverlayPackagesProvider
+    required_apps_managed_device: 21 apps
+      0: com.android.settings
+      1: com.android.systemui
+      2: com.android.contacts
+      3: com.android.dialer
+      4: com.android.stk
+      5: com.android.providers.downloads
+      6: com.android.providers.downloads.ui
+      7: com.android.documentsui
+      8: com.samsung.android.samsungpass
+      9: com.samsung.android.authfw
+      10: com.samsung.android.weather
+      11: com.samsung.android.knox.containercore
+      12: com.samsung.android.knox.containeragent
+      13: com.samsung.android.app.galaxyfinder
+      14: com.samsung.android.themestore
+      15: com.sec.android.app.camera
+      16: com.sec.android.mimage.photoretouching
+      17: com.samsung.android.appseparation
+      18: com.samsung.android.forest
+      19: com.android.cellbroadcastreceiver
+      20: com.google.android.cellbroadcastreceiver
+    required_apps_managed_user: 9 apps
+      0: com.android.settings
+      1: com.android.systemui
+      2: com.android.contacts
+      3: com.android.dialer
+      4: com.android.stk
+      5: com.android.providers.downloads
+      6: com.android.providers.downloads.ui
+      7: com.android.documentsui
+      8: com.samsung.android.forest
+    required_apps_managed_profile: 10 apps
+      0: com.android.contacts
+      1: com.android.settings
+      2: com.android.systemui
+      3: com.android.providers.downloads
+      4: com.android.providers.downloads.ui
+      5: com.android.documentsui
+      6: com.samsung.android.samsungpass
+      7: com.sec.keystringscreen
+      8: com.sec.android.mimage.photoretouching
+      9: com.samsung.android.forest
+    disallowed_apps_managed_device: empty
+    disallowed_apps_managed_user: empty
+    disallowed_apps_managed_device: empty
+    vendor_required_apps_managed_device: 20 apps
+      0: com.android.vending
+      1: com.google.android.gms
+      2: com.samsung.android.app.contacts
+      3: com.google.android.googlequicksearchbox
+      4: com.sec.android.app.launcher
+      5: com.samsung.android.dialer
+      6: com.samsung.android.messaging
+      7: com.sec.android.app.myfiles
+      8: com.samsung.android.lool
+      9: com.google.android.setupwizard
+      10: com.sec.android.app.SecSetupWizard
+      11: com.sec.enterprise.knox.cloudmdm.smdms
+      12: com.samsung.android.kgclient
+      13: com.sec.android.app.setupwizardlegalprovider
+      14: com.kddi.android.cmail
+      15: com.samsung.android.sm.devicesecurity
+      16: com.google.android.documentsui
+      17: com.google.android.apps.assistant
+      18: com.google.android.apps.searchlite
+      19: com.google.android.projection.gearhead
+    vendor_required_apps_managed_user: 8 apps
+      0: com.android.vending
+      1: com.google.android.gms
+      2: com.samsung.android.app.contacts
+      3: com.samsung.android.dialer
+      4: com.google.android.googlequicksearchbox
+      5: com.sec.android.app.launcher
+      6: com.sec.android.app.myfiles
+      7: com.google.android.documentsui
+    vendor_required_apps_managed_profile: 19 apps
+      0: com.android.vending
+      1: com.google.android.gms
+      2: com.samsung.android.app.contacts
+      3: com.sec.android.app.myfiles
+      4: com.android.server.telecom
+      5: com.samsung.android.knox.containeragent
+      6: com.samsung.android.knox.containercore
+      7: com.samsung.knox.keychain
+      8: com.google.android.permissioncontroller
+      9: com.samsung.android.providers.media
+      10: com.samsung.android.knox.pushmanager
+      11: com.samsung.android.knox.attestation
+      12: com.sec.enterprise.knox.attestation
+      13: com.google.android.apps.assistant
+      14: com.google.android.apps.searchlite
+      15: com.google.android.documentsui
+      16: com.samsung.android.forest
+      17: com.google.android.projection.gearhead
+      18: com.android.phone
+    vendor_disallowed_apps_managed_user: empty
+    vendor_disallowed_apps_managed_device: 85 apps
+      0: com.ampsvc.android
+      1: com.wildtangent.android
+      2: com.sec.android.app.samsungapps
+      3: com.sec.android.widgetapp.samsungapps
+      4: com.sec.android.widget.samsungapps
+      5: com.samsung.android.app.storyalbumwidget
+      6: com.samsung.android.sconnect
+      7: com.sec.android.widgetapp.locationwidget
+      8: com.samsung.preloadapp
+      9: com.sec.android.widgetapp.SPlannerAppWidget
+      10: com.sec.android.widgetapp.dualclockdigital
+      11: com.samsung.helphub
+      12: com.sec.android.app.videoplayer
+      13: com.sec.android.widgetapp.webmanual
+      14: com.hancom.androidpc.appwidget
+      15: com.sec.android.app.magnifier
+      16: com.samsung.android.coreapps
+      17: com.samsung.android.app.simplesharing
+      18: com.sec.android.widgetapp.galaxygifts
+      19: com.sec.android.easyMover
+      20: com.samsung.android.game.gametools
+      21: com.sec.android.app.sns3
+      22: com.skp.tstore.startup
+      23: com.skt.skaf.A000Z00040
+      24: com.skt.skaf.Z0000TSEED
+      25: com.skt.tservice
+      26: com.skt.hps20client
+      27: com.skt.skaf.OA00018282
+      28: com.lgt.arm
+      29: com.lguplus.appstore
+      30: com.lguplus.downloader
+      31: com.lguplus.pushagent
+      32: com.lguplus.common
+      33: com.kt.olleh.storefront
+      34: com.kt.serviceagent
+      35: com.kt.om.ktpackageinstaller
+      36: com.ktpns.pa
+      37: com.samsung.android.app.spage
+      38: com.samsung.android.weather
+      39: com.sec.android.daemonapp
+      40: com.samsung.android.scloud
+      41: com.samsung.android.visioncloudagent
+      42: com.samsung.android.bixby.wakeup
+      43: com.samsung.android.bixby.agent
+      44: com.samsung.android.visionintelligence
+      45: flipboard.boxer.app
+      46: de.axelspringer.yana.zeropage
+      47: com.mobilesrepublic.sohu.launcher
+      48: com.ss.android.sdk.minusscreen.samsung
+      49: com.aura.oobe.samsung
+      50: com.sec.android.app.kidshome
+      51: com.samsung.android.kidsinstaller
+      52: com.samsung.android.app.omcagent
+      53: com.samsung.android.voc
+      54: com.samsung.android.smartswitchassistant
+      55: com.sec.android.easyMover
+      56: com.sec.android.mimage.avatarstickers
+      57: com.samsung.android.mdx
+      58: com.samsung.android.app.sbrowseredge
+      59: com.samsung.discover
+      60: com.samsung.android.app.notesx
+      61: com.samsung.android.app.notes.addons
+      62: com.samsung.android.app.sharelive
+      63: com.dti.samsung
+      64: com.smg.rt
+      65: com.aura.oobe.Samsung.gl
+      66: com.aura.oobe.samsung
+      67: com.dti.telefonica
+      68: com.dti.tracfone
+      69: com.dti.att
+      70: com.LogiaGroup.LogiaDeck
+      71: com.dti.attmx
+      72: com.dti.millicom
+      73: com.dti.cricket
+      74: com.dti.globe
+      75: com.dti.bouygues
+      76: com.dti.uscc
+      77: com.dti.amx
+      78: com.dti.wiko
+      79: com.dti.sliide
+      80: com.dti.karbonn
+      81: com.dti.intex
+      82: com.dti.itel
+      83: com.dti.gionee
+      84: com.at.tg.rt
+    vendor_disallowed_apps_managed_profile: 248 apps
+      0: com.ampsvc.android
+      1: com.sec.android.app.factorykeystring
+      2: com.sec.android.app.sysscope
+      3: com.sec.android.app.safetyassurance
+      4: com.sec.android.service.sm
+      5: com.sec.android.pagebuddynotisvc
+      6: com.sec.android.fotaclient
+      7: com.sec.android.app.bluetoothtest
+      8: com.sec.android.emergencymode.service
+      9: com.sec.android.provider.emergencymode
+      10: com.sec.bcservice
+      11: com.sec.factory
+      12: com.sec.usbsettings
+      13: com.sec.modem.settings
+      14: com.sec.dsm.system
+      15: com.sec.esdk.elm
+      16: com.sec.android.app.sns3
+      17: com.samsung.android.app.storyalbumwidget
+      18: com.samsung.android.providers.context
+      19: com.samsung.android.coreapps
+      20: com.samsung.android.SettingsReceiver
+      21: com.samsung.android.voicewakeup
+      22: com.samsung.hs20settings
+      23: com.samsung.rcs
+      24: com.samsung.sec.android.application.csc
+      25: com.android.stk
+      26: com.fmm.dm
+      27: com.fmm.ds
+      28: com.samsung.android.bbc.bbcagent
+      29: com.samsung.android.bbc.fileprovider
+      30: com.sec.knox.bridge
+      31: com.sec.knox.containeragent2
+      32: com.samsung.knox.knoxtrustagent
+      33: com.sec.knox.foldercontainer
+      34: com.samsung.knox.kss
+      35: com.sec.knox.containeragent
+      36: com.sec.knox.cocktailprovider
+      37: com.sec.knox.cocktailprovider2
+      38: com.sec.knox.cocktailprovider3
+      39: com.sec.knox.packageverifier
+      40: com.sec.knox.securehandler
+      41: com.sec.knox.knoxsetupwizardclient
+      42: com.sec.knox.shortcutsms
+      43: com.sec.knox.store
+      44: com.sec.knox.switcher
+      45: com.samsung.knox.rcp.components
+      46: com.sec.knox.switchknoxII
+      47: com.sec.knox.switchknoxI
+      48: com.sec.knox.bluetooth
+      49: com.sec.enterprise.knox.myknoxsetupwizard
+      50: com.sec.android.app.shealth
+      51: com.samsung.android.sconnect
+      52: com.samsung.klmsagent
+      53: com.samsung.android.allshare.service.fileshare
+      54: com.android.dreams.basic
+      55: com.cleanmaster.sdk
+      56: com.sec.android.fido.uaf.asm
+      57: com.sec.android.fido.uaf.client
+      58: com.sec.fwservice
+      59: com.samsung.android.hmt.vrsvc
+      60: com.samsung.android.app.vrsetupwizardstub
+      61: com.samsung.android.hmt.vrshell
+      62: com.hancom.office.viewer
+      63: com.sec.android.service.health
+      64: com.sec.android.Kies
+      65: com.sec.android.emergencylauncher
+      66: com.yahoo.mobile.client.android.liveweather
+      67: com.samsung.android.keyguardwallpaperupdator
+      68: com.sec.android.omc
+      69: tv.peel.app
+      70: com.samsung.android.service.peoplestripe
+      71: com.android.dreams.phototable
+      72: com.samsung.android.personalpage.service
+      73: com.sec.pcw.device
+      74: com.gd.mobicore.pa
+      75: com.samsung.android.sdk.professionalaudio.utility.jammonitor
+      76: com.samsung.android.app.withtv
+      77: com.samsung.android.app.FileShareClient
+      78: com.samsung.android.app.FileShareServer
+      79: com.sec.android.app.easylauncher
+      80: com.sec.android.app.launcher
+      81: com.samsung.android.themestore
+      82: com.samsung.android.themecenter
+      83: com.samsung.android.svf
+      84: com.wildtangent.android
+      85: com.sec.android.widgetapp.samsungapps
+      86: com.sec.android.widget.samsungapps
+      87: com.sec.enterprise.knox.cloudmdm.smdms
+      88: com.sec.android.widgetapp.locationwidget
+      89: com.sec.android.widgetapp.ap.hero.accuweather
+      90: com.sec.android.widgetapp.at.hero.accuweather
+      91: com.sec.android.widgetapp.ap.hero.kweather
+      92: com.sec.android.widgetapp.at.hero.kweather
+      93: com.sec.android.widgetapp.ap.hero.cmaweather
+      94: com.sec.android.widgetapp.at.hero.cmaweather
+      95: com.sec.android.widgetapp.ap.hero.weathernewsjp
+      96: com.sec.android.daemonapp
+      97: com.samsung.preloadapp
+      98: com.samsung.helphub
+      99: com.sec.android.widgetapp.SPlannerAppWidget
+      100: com.sec.android.app.videoplayer
+      101: com.samsung.android.communicationservice
+      102: com.samsung.android.smartcallprovider
+      103: com.samsung.android.svcagent
+      104: com.sec.android.soagent
+      105: com.qualcomm.telephony
+      106: com.qualcomm.qti.services.secureui
+      107: com.qualcomm.display
+      108: com.qualcomm.svi
+      109: com.sec.android.app.musiccontroller
+      110: com.enhance.gameservice
+      111: com.sec.android.widgetapp.webmanual
+      112: com.hancom.androidpc.appwidget
+      113: com.pulitjp.fsolutionandroid.spackage
+      114: com.samsung.felicalock
+      115: com.samsung.nfcremotelock
+      116: jp.softbank.mb.nfclockap
+      117: com.nttdocomo.android.felicaremotelock
+      118: com.felicanetworks.mfm
+      119: com.felicanetworks.mfm.main
+      120: com.nttdocomo.android.databackup
+      121: com.sec.hiddenmenu
+      122: com.samsung.android.video
+      123: com.samsung.android.weather.widget
+      124: com.sec.imsservice
+      125: jp.co.optim.oru
+      126: com.samsung.android.game.gametools
+      127: com.sec.android.app.magnifier
+      128: com.samsung.android.app.simplesharing
+      129: com.sec.android.widgetapp.galaxygifts
+      130: com.sec.android.easyMover
+      131: com.sec.vsimservice
+      132: com.skp.tstore.startup
+      133: com.skt.skaf.A000Z00040
+      134: com.skt.skaf.Z0000TSEED
+      135: com.skt.tservice
+      136: com.skt.hps20client
+      137: com.skt.skaf.OA00018282
+      138: com.lgt.arm
+      139: com.lguplus.appstore
+      140: com.lguplus.downloader
+      141: com.lguplus.pushagent
+      142: com.lguplus.common
+      143: com.kt.olleh.storefront
+      144: com.kt.serviceagent
+      145: com.kt.om.ktpackageinstaller
+      146: com.ktpns.pa
+      147: com.samsung.android.app.spage
+      148: com.android.calendar
+      149: com.samsung.android.app.aodservice
+      150: com.samsung.android.bluelightfilter
+      151: com.samsung.android.scloud
+      152: com.samsung.android.visioncloudagent
+      153: com.samsung.android.bixby.wakeup
+      154: com.samsung.android.bixby.agent
+      155: com.samsung.android.visionintelligence
+      156: com.samsung.android.bixby.service
+      157: flipboard.boxer.app
+      158: de.axelspringer.yana.zeropage
+      159: com.mobilesrepublic.sohu.launcher
+      160: com.ss.android.sdk.minusscreen.samsung
+      161: com.samsung.networkui
+      162: com.sec.android.app.desktoplauncher
+      163: com.sec.android.sidesync30
+      164: com.kddi.android.auinitialsetting
+      165: com.samsung.android.fmm
+      166: com.samsung.android.tadownloader
+      167: com.samsung.android.tapack.authfw
+      168: com.samsung.android.samsungpass
+      169: com.samsung.android.samsungpassautofill
+      170: com.kddi.selfcare.client
+      171: com.samsung.android.knox.analytics.uploader
+      172: com.samsung.japan.easysettingmanager
+      173: com.sec.android.app.firewall
+      174: com.sec.android.preloadinstaller
+      175: com.samsung.android.lxd
+      176: com.nttdocomo.android.iconcier
+      177: com.samsung.svoice.sync
+      178: com.sec.android.app.kidshome
+      179: com.sec.android.app.cmas
+      180: com.samsung.android.app.telephonyui
+      181: com.att.android.attsmartwifi
+      182: com.samsung.android.keyguardmgsupdator
+      183: com.samsung.android.aircommandmanager
+      184: com.android.stk
+      185: com.sec.android.RilServiceModeApp
+      186: com.sec.app.RilErrorNotifier
+      187: com.sec.android.app.personalization
+      188: com.samsung.android.kgclient
+      189: com.samsung.android.game.gos
+      190: com.samsung.android.beaconmanager
+      191: com.sec.phone
+      192: com.sec.android.app.bluetoothtest
+      193: com.wssyncmldm
+      194: com.sec.android.sdhms
+      195: com.samsung.android.knox.analytics.uploader
+      196: com.samsung.android.bbc.bbcagent
+      197: com.samsung.android.svcagent
+      198: com.samsung.android.shortcutbackupservice
+      199: com.samsung.android.app.omcagent
+      200: com.samsung.android.sdm.config
+      201: com.samsung.android.easysetup
+      202: com.samsung.android.rubin.app
+      203: com.samsung.knox.securefolder
+      204: com.samsung.android.da.daagent
+      205: com.sec.android.AutoPreconfig
+      206: com.samsung.android.spdclient
+      207: com.samsung.android.voc
+      208: com.samsung.android.app.social
+      209: com.verizon.mips.services
+      210: com.sec.android.mimage.avatarstickers
+      211: com.samsung.android.app.earphonetypec
+      212: com.sec.android.app.wlandebugtool
+      213: com.samsung.android.uds
+      214: com.microsoft.appmanager
+      215: com.samsung.android.knox.analytics.uploader
+      216: com.samsung.android.app.sbrowseredge
+      217: com.sprint.ecid
+      218: com.sprint.ce.updater
+      219: com.samsung.discover
+      220: com.samsung.android.app.sharelive
+      221: com.dti.samsung
+      222: com.smg.rt
+      223: com.aura.oobe.Samsung.gl
+      224: com.aura.oobe.samsung
+      225: com.dti.telefonica
+      226: com.dti.tracfone
+      227: com.dti.att
+      228: com.LogiaGroup.LogiaDeck
+      229: com.dti.attmx
+      230: com.dti.millicom
+      231: com.dti.cricket
+      232: com.dti.globe
+      233: com.dti.bouygues
+      234: com.dti.uscc
+      235: com.dti.amx
+      236: com.dti.wiko
+      237: com.dti.sliide
+      238: com.dti.karbonn
+      239: com.dti.intex
+      240: com.dti.itel
+      241: com.dti.gionee
+      242: com.at.tg.rt
+      243: co.sitic.pp
+      244: com.speedymovil.wire
+      245: sk.sitic.pp
+      246: com.samsung.android.mdx.quickboard
+      247: com.samsung.android.setupindiaservicestnc
+  
+  Other overlayable app resources
+    cross_profile_apps: 2 apps
+      0: com.samsung.android.honeyboard
+      1: com.samsung.android.calendar
+    vendor_cross_profile_apps: 3 apps
+      0: com.google.android.googlequicksearchbox
+      1: com.google.android.inputmethod.latin
+      2: com.google.android.projection.gearhead
+    config_packagesExemptFromSuspension: 1 app
+      0: com.google.android.apps.wellbeing
+    policy_exempt_apps: empty
+    vendor_policy_exempt_apps: empty
+  
