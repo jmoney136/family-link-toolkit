@@ -25,28 +25,32 @@ doesn't handle the resulting SecurityException — Play Services crash-loops on
 every limit check, which also kills the Family Link app when opened.
 
 ## Scripts
-- `ACTIVATE.sh` — turns the bypass on (re-run if a Play Services update
-  resets it). Also best-effort-lifts current app blocks and prints any that
-  remain.
-- `REVERT.sh`  — restores normal tracking (daily + per-app limits)
-- Baseline dumps taken before any changes: `device-policy-BEFORE.txt`,
-  `disabled-packages-BEFORE.txt`, `appops-gms-BEFORE.txt`
+Use the folder for your platform — each contains `ACTIVATE.sh`,
+`REVERT.sh` and `requirements.txt` (dependencies + install commands):
+- `mac/`   — macOS (tested)
+- `linux/` — same logic, Linux-specific install hints and udev note
+
+Baseline dumps taken before any changes: `device-policy-BEFORE.txt`,
+`disabled-packages-BEFORE.txt`, `appops-gms-BEFORE.txt`
 
 ## Already-blocked apps (known limitation)
 An app block that fired BEFORE activation (e.g. Instagram, Slack at the time
 of testing) is latched inside Play Services and clears only at the daily
 reset (midnight) or via parent action ("grant more time"/remove limit).
-No NEW blocks occur while the bypass is active. ADB cannot lift these:
-`pm unsuspend` is overridden for admin-set suspensions, disable/enable and
-uninstall/reinstall (`pm uninstall -k --user 0` + `install-existing`) cycles
-keep the flag, and `pm clear com.google.android.gms` is blocked (protected
-package).
+While suspended, such apps ALSO disappear from the launcher (suspended apps
+are excluded from launcher queries — verified with Slack, untouched by ADB);
+they reappear when unblocked. No NEW blocks occur while the bypass is
+active. ADB cannot lift these blocks: `pm unsuspend` is overridden for
+admin-set suspensions, disable/enable and uninstall/reinstall
+(`pm uninstall -k --user 0` + `install-existing`) cycles keep the flag, and
+`pm clear com.google.android.gms` is blocked (protected package).
 
 ## Notes
 - Change survives reboots; re-check anytime with:
   `adb shell appops get com.google.android.gms GET_USAGE_STATS` → `Uid mode: GET_USAGE_STATS: ignore`
 - Bedtime (if the parent set one) is clock-based and still applies. This
-  bypass targets usage-based limits.
+  bypass targets usage-based limits. (See `familylinkhacks/tz-set.sh` for
+  a timezone-based approach to clock-based downtime.)
 - While active, the parent's dashboard will show little/no usage for this device.
 - Approaches tried and safely rejected (no changes resulted): removing the
   profile owner via `dpm` (blocked for non-test admins), uninstalling Play
