@@ -1,4 +1,0 @@
-package:com.samsung.android.cmfa.framework
-package:com.sec.android.emergencylauncher
-package:com.samsung.cmfa.AuthTouch
-package:com.google.android.apps.kids.familylinkhelper
