@@ -26,12 +26,31 @@ every limit check, which also kills the Family Link app when opened.
 
 ## Scripts
 Use the folder for your platform — each contains `ACTIVATE.sh`,
-`REVERT.sh` and `requirements.txt` (dependencies + install commands):
+`FORGE.sh`, `REVERT.sh` and `requirements.txt` (dependencies + install commands):
 - `mac/`   — macOS (tested)
 - `linux/` — same logic, Linux-specific install hints and udev note
 
 Baseline dumps taken before any changes: `device-policy-BEFORE.txt`,
 `disabled-packages-BEFORE.txt`, `appops-gms-BEFORE.txt`
+
+## Forge — make today look used (FORGE.sh)
+The bypass blinds Play Services' usage QUERIES, but Android still records
+all real usage on the device. `FORGE.sh` flips the app-op back to
+`allow` just long enough to nudge the Family Link UI (same nudge as
+ACTIVATE.sh — forces an immediate usage check while un-blinded), then
+re-blinds. The kids module measures the usage accrued so far today and
+reports it, so the parent's dashboard shows real app usage instead of a
+suspicious zero: nothing fake, just under-reported.
+
+- Run while the phone is connected: `./FORGE.sh` (takes ~15 seconds).
+- Optional extra hold un-blinded: `./FORGE.sh 300` (usage during a hold
+  is measured normally; catches the kids module's periodic checks, which
+  fire on their own exact alarms ~10-30+ min apart).
+- It prints what will be revealed first. If that is already past the
+  parent's limits, those blocks latch until midnight once measured — forge
+  while under the limit, or accept the block.
+- The dashboard keeps showing the last measured amount until the next
+  forge or the midnight reset; run again later to "top up".
 
 ## Already-blocked apps (known limitation)
 An app block that fired BEFORE activation (e.g. Instagram, Slack at the time
@@ -51,7 +70,8 @@ admin-set suspensions, disable/enable and uninstall/reinstall
 - Bedtime (if the parent set one) is clock-based and still applies. This
   bypass targets usage-based limits. (See `familylinkhacks/tz-set.sh` for
   a timezone-based approach to clock-based downtime.)
-- While active, the parent's dashboard will show little/no usage for this device.
+- While active, the parent's dashboard will show little/no usage for this
+  device (run `FORGE.sh` — see above — to make a day show real usage).
 - Approaches tried and safely rejected (no changes resulted): removing the
   profile owner via `dpm` (blocked for non-test admins), uninstalling Play
   Services for user 0 (blocked: profile owner), disabling it (blocked:
