@@ -1,0 +1,22 @@
+Requirements — Downtime bypass scripts (Termux)
+===============================================
+
+1. Install required packages:
+   pkg update && pkg install -y android-tools curl
+
+2. Verify tools are installed:
+   adb version
+   curl --version
+
+3. Connect your Android device via USB with USB debugging enabled
+   (Settings > Developer options > USB debugging)
+   Authorize this computer when prompted on the device.
+
+4. Verify connection:
+   adb devices
+
+5. For wireless ADB (optional, requires initial USB connection):
+   adb tcpip 5555
+   adb connect <device-ip>:5555
+
+No Python, Node, or other dependencies required.

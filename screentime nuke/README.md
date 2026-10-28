@@ -29,6 +29,7 @@ Use the folder for your platform — each contains `ACTIVATE.sh`,
 `FORGE.sh`, `REVERT.sh` and `requirements.txt` (dependencies + install commands):
 - `mac/`   — macOS (tested)
 - `linux/` — same logic, Linux-specific install hints and udev note
+- `termux/` — Termux on Android (tested)
 
 Baseline dumps taken before any changes: `device-policy-BEFORE.txt`,
 `disabled-packages-BEFORE.txt`, `appops-gms-BEFORE.txt`
